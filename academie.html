@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Académie Heritage of Flavours · Leçon de démonstration</title>
+<link rel="icon" href="img/seal.svg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f0e4;--paper:#fffaf0;--ink:#2e2620;--mut:#7a6650;--gold:#9a7430;--gold2:#c9a25a;--goldsoft:#f1e6cc;--line:#e6d9bf;--laurel:#24392d;--laurel2:#2f4a3a;--green:#3f6b4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,'Noto Sans SC','Noto Naskh Arabic',-apple-system,'Segoe UI',sans-serif}
+body:not(.l-fr) [lang=fr]{display:none!important} body:not(.l-en) [lang=en]{display:none!important} body:not(.l-es) [lang=es]{display:none!important} body:not(.l-pt) [lang=pt]{display:none!important} body:not(.l-ru) [lang=ru]{display:none!important} body:not(.l-ar) [lang=ar]{display:none!important} body:not(.l-zh) [lang=zh]{display:none!important}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.build{background:#efe3c4;color:#5c4513;font-size:14px;text-align:center;padding:8px 16px;border-bottom:1px solid var(--line)}
+.build b{color:#3d2d08}
+.top{position:sticky;top:0;z-index:10;background:rgba(36,57,45,.97);color:#efe6cc}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:#f0dca3}
+.brand img{width:30px;height:30px}
+.brand small{font-family:Inter;font-size:11px;letter-spacing:.12em;color:#c9bfa0;margin-left:6px}
+.right{display:flex;align-items:center;gap:14px}
+.back{font-size:14px;text-decoration:none;opacity:.85}
+.cab{background:#d8b66f;color:var(--laurel);font-weight:600;font-size:13.5px;padding:7px 16px;border-radius:20px;text-decoration:none}
+.lang{display:flex;gap:4px}
+.lang button{background:none;border:1px solid rgba(240,220,163,.4);color:#efe6cc;font:600 12px Inter;padding:4px 9px;border-radius:14px;cursor:pointer}
+.lang button.on{background:#f0dca3;color:var(--laurel);border-color:#f0dca3}
+/* course head */
+.head{padding:40px 0 6px}
+.tag{display:inline-flex;align-items:center;gap:9px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 15px 6px 12px;font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--mut)}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+h1{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-weight:600;font-size:clamp(34px,4.6vw,54px);line-height:1.05;margin:16px 0 12px;max-width:20ch}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{font-size:17.5px;color:var(--mut);max-width:64ch;margin-bottom:22px}
+.meta{display:flex;flex-wrap:wrap;gap:10px}
+.meta>div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:11px 18px;min-width:140px}
+.meta .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.meta .v{font-size:16.5px;font-weight:600;margin-top:2px}
+/* layout */
+.layout{display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start;padding:30px 0 60px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-bottom:22px}
+.card h2{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:29px;font-weight:600;line-height:1.1;margin-bottom:8px}
+.card h3{font-size:15px;font-weight:600;margin:22px 0 8px}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+p{margin:0 0 12px}
+/* player */
+.player{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#35543f 0%,#24392d 60%,#1b2b22 100%);display:grid;place-items:center;text-align:center;color:#efe6cc;padding:24px}
+.player .logo{width:92px;border-radius:12px;opacity:.95;margin:0 auto 14px;display:block}
+.player .play{width:64px;height:64px;border-radius:50%;background:rgba(240,220,163,.15);border:2px solid rgba(240,220,163,.6);display:grid;place-items:center;margin:0 auto 12px}
+.player .play::after{content:"";margin-left:5px;border-left:18px solid #f0dca3;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.player .cap{font-size:14px;color:#d8cfb4;max-width:46ch;margin:0 auto}
+.player .wm{position:absolute;top:14px;right:18px;font-size:12px;color:rgba(240,220,163,.35);letter-spacing:.08em}
+.player .bar{position:absolute;left:0;right:0;bottom:0;height:38px;background:rgba(0,0,0,.35);display:flex;align-items:center;gap:12px;padding:0 14px;font-size:12.5px}
+.player .bar .track{flex:1;height:3px;background:rgba(255,255,255,.25);border-radius:2px;position:relative}
+.player .bar .track i{position:absolute;left:0;top:0;bottom:0;width:24%;background:var(--gold2);border-radius:2px}
+.pnote{font-size:13.5px;color:var(--mut);margin:12px 0 0;padding-left:14px;border-left:3px solid var(--goldsoft)}
+.ltitle{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:27px;font-weight:600;line-height:1.15;margin:20px 0 4px}
+.lsub{font-size:14.5px;color:var(--mut);margin:0}
+/* files */
+.files{list-style:none;margin:12px 0 0}
+.files li{border-top:1px solid var(--line)}.files li:first-child{border-top:none}
+.files a{display:flex;align-items:center;gap:14px;padding:12px 4px;text-decoration:none;font-weight:500}
+.files .ext{flex:0 0 auto;width:44px;height:44px;border-radius:11px;background:var(--goldsoft);color:var(--gold);display:grid;place-items:center;font-size:10.5px;font-weight:700;letter-spacing:.04em}
+.files .nm{flex:1;font-size:15px}
+.files .sz{font-size:12.5px;color:var(--mut);white-space:nowrap}
+/* quiz */
+.quiz .q{font-weight:600;margin-bottom:10px}
+.quiz label{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:8px;cursor:pointer;background:var(--bg);font-size:15px}
+.quiz label.ok{border-color:var(--green);background:#eaf2ec}
+.quiz label.no{border-color:#b9603f;background:#f8ebe4}
+.quiz .fb{font-size:14px;color:var(--mut);margin-top:6px;min-height:22px}
+/* teacher */
+.teacher{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.ava{flex:0 0 auto;width:88px;height:88px;border-radius:18px;background:var(--laurel2);display:grid;place-items:center;font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:32px;color:#f0dca3}
+.teacher .nm{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:25px;font-weight:600;line-height:1.1}
+.teacher .role{color:var(--gold);font-weight:600;font-size:14px;margin:3px 0 10px}
+/* steps */
+.steps{list-style:none;counter-reset:s;margin-top:12px}
+.steps li{position:relative;padding-left:44px;margin-bottom:16px;font-size:15px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-1px;width:29px;height:29px;border-radius:50%;background:var(--goldsoft);color:var(--gold);display:grid;place-items:center;font-weight:700;font-size:14px}
+.steps b{display:block}
+.cert{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.cert img{width:300px;max-width:100%;border-radius:10px;box-shadow:0 10px 26px rgba(36,57,45,.22)}
+.cert .body{flex:1 1 260px}
+/* sidebar */
+aside .card{position:sticky;top:76px}
+.progress{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:12px 0 6px}
+.progress i{display:block;height:100%;width:20%;background:var(--gold)}
+.pnote2{font-size:13px;color:var(--mut);margin-bottom:16px}
+.mods{list-style:none}
+.mod{margin-bottom:16px}
+.mod .mh{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:6px}
+.mod ol{list-style:none}
+.mod ol li{display:flex;gap:11px;align-items:flex-start;padding:8px 10px;border-radius:11px;font-size:14.5px;line-height:1.4}
+.mod ol li.done{color:var(--mut)}
+.mod ol li.cur{background:var(--goldsoft);font-weight:600}
+.st{flex:0 0 auto;width:18px;height:18px;border-radius:50%;border:2px solid var(--line);margin-top:2px;position:relative}
+.done .st{background:var(--green);border-color:var(--green)}
+.done .st::after{content:"";position:absolute;left:5px;top:1.5px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.cur .st{border-color:var(--gold);background:radial-gradient(circle,var(--gold) 42%,transparent 44%)}
+.lock{opacity:.6}
+.help a{display:block;text-align:center;border:1px solid var(--line);border-radius:30px;padding:10px;text-decoration:none;font-weight:600;font-size:14.5px;background:var(--bg)}
+footer{background:#1b2b22;color:#bfb49a;text-align:center;padding:34px 0;font-size:14px}
+footer .motto{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-style:italic;font-size:21px;color:var(--gold2);margin-bottom:8px}
+@media(max-width:940px){.layout{grid-template-columns:1fr}aside .card{position:static}.back{display:none}}
+@media(max-width:560px){.card{padding:20px 18px}.brand small{display:none}.cab{display:none}}
+.mlp{border-radius:16px;overflow:hidden;background:#1b2b22;box-shadow:0 18px 44px rgba(36,57,45,.25)}
+.mlp video{display:block;width:100%;aspect-ratio:16/9;background:#1b2b22}
+.mlp-lang{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:10px 14px;background:#24392d;color:#d8cfb4;font-size:13px}
+.mlp-lang span.lbl{margin-right:6px;letter-spacing:.06em}
+.mlp-lang button{background:none;border:1px solid rgba(240,220,163,.4);color:#efe6cc;font:600 12px Inter,'Noto Sans SC',sans-serif;padding:4px 10px;border-radius:14px;cursor:pointer}
+.mlp video::cue{background:rgba(20,30,24,.78);color:#f6efd9;font-family:Inter,sans-serif}
+.mlp-lang button.on{background:#f0dca3;color:#24392d;border-color:#f0dca3}
+.top .wrap{max-width:1320px}.brand,.menu a,.acad,.cab,.back{white-space:nowrap}.menu{gap:16px}
+@media(max-width:1240px){.menu{display:none}}
+body.l-ar *{letter-spacing:0!important}
+body.l-ar{line-height:1.8}
+.mlp{direction:ltr}
+.langsel{background:transparent;border:1px solid rgba(240,220,163,.45);color:#f0dca3;font:600 13px Inter,'Noto Sans SC','Noto Naskh Arabic',sans-serif;padding:6px 10px;border-radius:16px;cursor:pointer}
+.langsel option{color:#2e2620;background:#fffaf0}
+</style>
+</head>
+<body class="l-fr">
+
+<div class="build">
+  <span lang="fr"><b>Démonstration.</b> Voici à quoi ressemblera une leçon de l’Académie HF. Le contenu est indicatif ; notre équipe technique finalise la plateforme.</span>
+  <span lang="ru"><b>Демо.</b> Так будет выглядеть урок Академии HF. Содержание условное; техспециалист завершает платформу.</span>
+  <span lang="en"><b>Demo.</b> This is what an HF Academy lesson will look like. The content is indicative; our technical team is finalising the platform.</span>
+  <span lang="es"><b>Demostración.</b> Así será una lección de la Academia HF. El contenido es orientativo; nuestro equipo técnico está terminando la plataforma.</span>
+  <span lang="pt"><b>Demonstração.</b> Assim será uma aula da Academia HF. O conteúdo é indicativo; a nossa equipa técnica está a finalizar a plataforma.</span>
+  <span lang="ar"><b>عرض تجريبي.</b> هكذا سيبدو درس في أكاديمية HF. المحتوى استرشادي؛ وفريقنا التقني يضع اللمسات الأخيرة على المنصة.</span>
+  <span lang="zh"><b>示范。</b>HF 学院的课程将是这个样子。内容仅供参考；我们的技术团队正在完善平台。</span>
+</div>
+
+<div class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="img/seal.svg" alt="">Heritage of Flavours<small><span lang="fr">Académie</span><span lang="ru">Академия</span><span lang="en">Academy</span><span lang="es">Academia</span><span lang="pt">Academia</span><span lang="ar">الأكاديمية</span><span lang="zh">学院</span></small></a>
+  <div class="right">
+    <a class="back" href="index.html"><span lang="fr">← Le site</span><span lang="ru">← На сайт</span><span lang="en">← Main site</span><span lang="es">← El sitio</span><span lang="pt">← O site</span><span lang="ar">الموقع →</span><span lang="zh">← 返回网站</span></a>
+    <a class="cab" href="#"><span lang="fr">Espace de l’élève</span><span lang="ru">Кабинет ученика</span><span lang="en">Student area</span><span lang="es">Área del alumno</span><span lang="pt">Área do aluno</span><span lang="ar">مساحة المتدرّب</span><span lang="zh">学员空间</span></a>
+    <div class="lang"><select class="langsel" aria-label="Language"><option value="fr">🌐 Français</option><option value="en">🌐 English</option><option value="es">🌐 Español</option><option value="pt">🌐 Português</option><option value="ru">🌐 Русский</option><option value="ar">🌐 العربية</option><option value="zh">🌐 中文</option></select></div>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <section class="head">
+    <span class="tag"><i></i><span lang="fr">Formation des juges · Théorie</span><span lang="ru">Обучение судей · Теория</span><span lang="en">Judge training · Theory</span><span lang="es">Formación de jueces · Teoría</span><span lang="pt">Formação de juízes · Teoria</span><span lang="ar">تدريب الحكّام · النظري</span><span lang="zh">评委培训 · 理论</span></span>
+    <h1><span lang="fr">Les fondements du <em>système HF</em></span><span lang="ru">Основы <em>системы HF</em></span><span lang="en">The foundations of the <em>HF system</em></span><span lang="es">Los fundamentos del <em>sistema HF</em></span><span lang="pt">Os fundamentos do <em>sistema HF</em></span><span lang="ar">أسس <em>نظام HF</em></span><span lang="zh"><em>HF 体系</em>基础</span></h1>
+    <p class="sub"><span lang="fr">Le cours qui ouvre la voie du juge Heritage of Flavours : principes, notation, rôle du Gardien des Traditions, travail à la table du jury. Il est suivi du chapitre de la cuisine choisie, enseigné par son auteur.</span><span lang="ru">Курс, с которого начинается путь судьи Heritage of Flavours: принципы, система баллов, роль Хранителя традиций, работа за судейским столом. За ним — глава выбранной кухни, которую ведёт её автор.</span><span lang="en">The course that opens the path of a Heritage of Flavours judge: principles, scoring, the role of the Keeper of Traditions, work at the jury table. It is followed by the chapter on the chosen cuisine, taught by its author.</span><span lang="es">El curso que abre el camino del juez Heritage of Flavours: principios, puntuación, papel del Guardián de las Tradiciones, trabajo en la mesa del jurado. Le sigue el capítulo de la cocina elegida, impartido por su autor.</span><span lang="pt">O curso que abre o caminho do juiz Heritage of Flavours: princípios, pontuação, papel do Guardião das Tradições, trabalho à mesa do júri. Segue-se o capítulo da cozinha escolhida, ensinado pelo seu autor.</span><span lang="ar">الدورة التي تفتح طريق الحَكَم في Heritage of Flavours: المبادئ، والتنقيط، ودور حارس التقاليد، والعمل على طاولة التحكيم. يليها فصل المطبخ المختار، ويدرّسه مؤلفه.</span><span lang="zh">开启 Heritage of Flavours 评委之路的课程：原则、评分、传统守护者的作用、评审席上的工作。之后是所选菜系的章节，由其作者讲授。</span></p>
+    <div class="meta">
+      <div><div class="k"><span lang="fr">Format</span><span lang="ru">Формат</span><span lang="en">Format</span><span lang="es">Formato</span><span lang="pt">Formato</span><span lang="ar">الصيغة</span><span lang="zh">形式</span></div><div class="v"><span lang="fr">En ligne, en groupe</span><span lang="ru">Онлайн, в группе</span><span lang="en">Online, in a group</span><span lang="es">En línea, en grupo</span><span lang="pt">Online, em grupo</span><span lang="ar">عبر الإنترنت، ضمن مجموعة</span><span lang="zh">线上，分组</span></div></div>
+      <div><div class="k"><span lang="fr">Langues</span><span lang="ru">Языки</span><span lang="en">Languages</span><span lang="es">Idiomas</span><span lang="pt">Idiomas</span><span lang="ar">اللغات</span><span lang="zh">语言</span></div><div class="v">EN · FR · ES · PT</div></div>
+      <div><div class="k"><span lang="fr">Validité</span><span lang="ru">Действует</span><span lang="en">Valid for</span><span lang="es">Validez</span><span lang="pt">Validade</span><span lang="ar">الصلاحية</span><span lang="zh">有效期</span></div><div class="v"><span lang="fr">12 mois</span><span lang="ru">12 месяцев</span><span lang="en">12 months</span><span lang="es">12 meses</span><span lang="pt">12 meses</span><span lang="ar">12 شهرًا</span><span lang="zh">12个月</span></div></div>
+      <div><div class="k"><span lang="fr">Ensuite</span><span lang="ru">Затем</span><span lang="en">Then</span><span lang="es">Después</span><span lang="pt">Depois</span><span lang="ar">بعد ذلك</span><span lang="zh">之后</span></div><div class="v"><span lang="fr">Pratique au festival</span><span lang="ru">Практика на фестивале</span><span lang="en">Practice at a festival</span><span lang="es">Práctica en un festival</span><span lang="pt">Prática num festival</span><span lang="ar">التطبيق في المهرجان</span><span lang="zh">节庆现场实践</span></div></div>
+      <div><div class="k"><span lang="fr">Document</span><span lang="ru">Документ</span><span lang="en">Document</span><span lang="es">Documento</span><span lang="pt">Documento</span><span lang="ar">الوثيقة</span><span lang="zh">文件</span></div><div class="v"><span lang="fr">Certificat HF</span><span lang="ru">Сертификат HF</span><span lang="en">HF certificate</span><span lang="es">Certificado HF</span><span lang="pt">Certificado HF</span><span lang="ar">شهادة HF</span><span lang="zh">HF 证书</span></div></div>
+    </div>
+  </section>
+
+  <div class="layout">
+    <main>
+      <div class="card">
+        <div class="eyebrow"><span lang="fr">Leçon 3</span><span lang="ru">Урок 3</span><span lang="en">Lesson 3</span><span lang="es">Lección 3</span><span lang="pt">Aula 3</span><span lang="ar">الدرس 3</span><span lang="zh">第3课</span></div>
+        <div class="mlp" data-base="media/hf-demo"><video controls playsinline preload="metadata" poster="media/hf-demo-poster.jpg" src="media/hf-demo.mp4"></video><div class="mlp-lang"><span class="lbl"><span lang="fr">Langue de la voix :</span><span lang="ru">Язык озвучки:</span><span lang="en">Voice language:</span><span lang="es">Idioma de la voz:</span><span lang="pt">Idioma da voz:</span><span lang="ar">لغة الصوت:</span><span lang="zh">配音语言：</span></span><button data-a="fr">FR</button><button data-a="ru">RU</button><button data-a="en">EN</button><button data-a="es">ES</button><button data-a="pt">PT</button><button data-a="ar">AR</button><button data-a="zh">中文</button><span style="flex:1"></span><button class="cc" style="border-color:#f0dca3;color:#f0dca3" data-cc="1" title="Subtitles">CC · <span lang="fr">Sous-titres</span><span lang="ru">Субтитры</span><span lang="en">Subtitles</span><span lang="es">Subtítulos</span><span lang="pt">Legendas</span><span lang="ar">الترجمة النصية</span><span lang="zh">字幕</span></button></div></div>
+        <p class="pnote"><span lang="fr">Démonstration du lecteur : une seule vidéo et une voix dans chaque langue, que l’élève choisit lui-même. Les leçons seront hébergées dans un espace protégé, lisibles uniquement sur le site de l’Académie.</span><span lang="ru">Демонстрация плеера: одно видео и голос на каждом языке, ученик выбирает сам. Уроки будут храниться в закрытом пространстве и воспроизводиться только на сайте Академии.</span><span lang="en">Player demo: one video and a voice in each language, chosen by the student. Lessons will be hosted in a protected space and play only on the Academy website.</span><span lang="es">Demostración del reproductor: un solo vídeo y una voz en cada idioma, que elige el propio alumno. Las lecciones se alojarán en un espacio protegido y solo podrán verse en el sitio de la Academia.</span><span lang="pt">Demonstração do leitor: um só vídeo e uma voz em cada idioma, escolhida pelo próprio aluno. As aulas ficarão num espaço protegido e só poderão ser vistas no site da Academia.</span><span lang="ar">عرض للمشغّل: فيديو واحد وصوت بكل لغة يختارها المتدرّب بنفسه. ستُستضاف الدروس في مساحة محمية ولن تُعرض إلا على موقع الأكاديمية.</span><span lang="zh">播放器演示：一个视频，每种语言一条配音，由学员自行选择。课程将存放在受保护的空间，只能在学院网站上播放。</span></p>
+
+        <div class="ltitle"><span lang="fr">Le Gardien des Traditions et la moitié de la note</span><span lang="ru">Хранитель традиций и половина оценки</span><span lang="en">The Keeper of Traditions and half of the score</span><span lang="es">El Guardián de las Tradiciones y la mitad de la nota</span><span lang="pt">O Guardião das Tradições e metade da nota</span><span lang="ar">حارس التقاليد ونصف الدرجة</span><span lang="zh">传统守护者与一半的分数</span></div>
+        <p class="lsub"><span lang="fr">Pourquoi la voix de celui qui connaît la cuisine pèse autant que toute la table, et comment se forme la note de tradition.</span><span lang="ru">Почему голос знатока кухни весит столько же, сколько весь стол, и как складывается оценка традиции.</span><span lang="en">Why the voice of the one who knows the cuisine weighs as much as the whole table, and how the tradition score is formed.</span><span lang="es">Por qué la voz de quien conoce la cocina pesa tanto como toda la mesa, y cómo se forma la nota de tradición.</span><span lang="pt">Porque é que a voz de quem conhece a cozinha pesa tanto como toda a mesa, e como se forma a nota de tradição.</span><span lang="ar">لماذا يعادل صوت العارف بالمطبخ وزن الطاولة كلها، وكيف تتكوّن درجة التقاليد.</span><span lang="zh">为什么懂行者的意见与整张评审桌同等分量，以及传统分是如何形成的。</span></p>
+
+        <h3><span lang="fr">Supports de la leçon</span><span lang="ru">Материалы к уроку</span><span lang="en">Lesson materials</span><span lang="es">Materiales de la lección</span><span lang="pt">Materiais da aula</span><span lang="ar">مواد الدرس</span><span lang="zh">课程资料</span></h3>
+        <ul class="files">
+          <li><a href="#"><span class="ext">PDF</span><span class="nm"><span lang="fr">Grille d’évaluation HF : maîtrise et tradition</span><span lang="ru">Оценочный лист HF: мастерство и традиция</span><span lang="en">HF scoring sheet: mastery and tradition</span><span lang="es">Hoja de evaluación HF: maestría y tradición</span><span lang="pt">Grelha de avaliação HF: mestria e tradição</span><span lang="ar">ورقة تقييم HF: الإتقان والتقاليد</span><span lang="zh">HF 评分表：技艺与传统</span></span><span class="sz"><span lang="fr">bientôt</span><span lang="ru">скоро</span><span lang="en">soon</span><span lang="es">pronto</span><span lang="pt">em breve</span><span lang="ar">قريبًا</span><span lang="zh">即将推出</span></span></a></li>
+          <li><a href="#"><span class="ext">PDF</span><span class="nm"><span lang="fr">Fiche du Gardien des Traditions</span><span lang="ru">Лист Хранителя традиций</span><span lang="en">Keeper of Traditions sheet</span><span lang="es">Hoja del Guardián de las Tradiciones</span><span lang="pt">Ficha do Guardião das Tradições</span><span lang="ar">ورقة حارس التقاليد</span><span lang="zh">传统守护者评分表</span></span><span class="sz"><span lang="fr">bientôt</span><span lang="ru">скоро</span><span lang="en">soon</span><span lang="es">pronto</span><span lang="pt">em breve</span><span lang="ar">قريبًا</span><span lang="zh">即将推出</span></span></a></li>
+          <li><a href="#"><span class="ext">PDF</span><span class="nm"><span lang="fr">Aide-mémoire du juge</span><span lang="ru">Памятка судьи</span><span lang="en">Judge’s handbook</span><span lang="es">Guía del juez</span><span lang="pt">Guia do juiz</span><span lang="ar">دليل الحَكَم</span><span lang="zh">评委手册</span></span><span class="sz"><span lang="fr">bientôt</span><span lang="ru">скоро</span><span lang="en">soon</span><span lang="es">pronto</span><span lang="pt">em breve</span><span lang="ar">قريبًا</span><span lang="zh">即将推出</span></span></a></li>
+        </ul>
+      </div>
+
+      <div class="card quiz">
+        <div class="eyebrow"><span lang="fr">Question de contrôle</span><span lang="ru">Проверочный вопрос</span><span lang="en">Check question</span><span lang="es">Pregunta de control</span><span lang="pt">Pergunta de controlo</span><span lang="ar">سؤال للمراجعة</span><span lang="zh">检测题</span></div>
+        <div class="q"><span lang="fr">Une table de cinq juges évalue un plat de la cuisine du Maghreb. Quelle part de la note de tradition revient au Gardien des Traditions de cette cuisine ?</span><span lang="ru">Стол из пяти судей оценивает блюдо кухни Магриба. Какая часть оценки традиции принадлежит Хранителю традиций этой кухни?</span><span lang="en">A table of five judges evaluates a dish from Maghreb cuisine. What share of the tradition score belongs to the Keeper of Traditions for that cuisine?</span><span lang="es">Una mesa de cinco jueces evalúa un plato de la cocina del Magreb. ¿Qué parte de la nota de tradición corresponde al Guardián de las Tradiciones de esa cocina?</span><span lang="pt">Uma mesa de cinco juízes avalia um prato da cozinha do Magrebe. Que parte da nota de tradição cabe ao Guardião das Tradições dessa cozinha?</span><span lang="ar">طاولة من خمسة حكّام تقيّم طبقًا من المطبخ المغاربي. ما نصيب حارس تقاليد هذا المطبخ من درجة التقاليد؟</span><span lang="zh">一桌五位评委评审一道马格里布菜。该菜系的传统守护者在传统分中占多大比重？</span></div>
+        <label data-r="no"><input type="radio" name="q"> <span><span lang="fr">Un cinquième, comme chaque juge</span><span lang="ru">Пятая часть, как у каждого судьи</span><span lang="en">One fifth, like every judge</span><span lang="es">Una quinta parte, como cada juez</span><span lang="pt">Um quinto, como cada juiz</span><span lang="ar">الخُمس، مثل كل حَكَم</span><span lang="zh">五分之一，与每位评委相同</span></span></label>
+        <label data-r="ok"><input type="radio" name="q"> <span><span lang="fr">La moitié, quelle que soit la taille du jury</span><span lang="ru">Половина — при любом размере жюри</span><span lang="en">Half, whatever the size of the jury</span><span lang="es">La mitad, sea cual sea el tamaño del jurado</span><span lang="pt">Metade, seja qual for o tamanho do júri</span><span lang="ar">النصف، مهما كان عدد أعضاء اللجنة</span><span lang="zh">一半，无论评审团人数多少</span></span></label>
+        <label data-r="no"><input type="radio" name="q"> <span><span lang="fr">Son avis est seulement consultatif</span><span lang="ru">Его мнение только совещательное</span><span lang="en">Their opinion is only advisory</span><span lang="es">Su opinión es solo consultiva</span><span lang="pt">A sua opinião é apenas consultiva</span><span lang="ar">رأيه استشاري فقط</span><span lang="zh">其意见仅供参考</span></span></label>
+        <div class="fb" id="fb"></div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow"><span lang="fr">Enseignante</span><span lang="ru">Ведёт урок</span><span lang="en">Teacher</span><span lang="es">Profesora</span><span lang="pt">Professora</span><span lang="ar">المدرّسة</span><span lang="zh">授课老师</span></div>
+        <div class="teacher">
+          <div class="ava">TS</div>
+          <div style="flex:1 1 260px">
+            <div class="nm">Tatiana Shkoda</div>
+            <div class="role"><span lang="fr">Fondatrice du système · Présidente du Conseil des Fondateurs</span><span lang="ru">Основательница системы · Председатель Совета основателей</span><span lang="en">Founder of the system · President of the Council of Founders</span><span lang="es">Fundadora del sistema · Presidenta del Consejo de Fundadores</span><span lang="pt">Fundadora do sistema · Presidente do Conselho dos Fundadores</span><span lang="ar">مؤسِّسة النظام · رئيسة مجلس المؤسسين</span><span lang="zh">体系创始人 · 创始人理事会主席</span></div>
+            <p style="margin:0"><span lang="fr">Les fondements du système sont enseignés par sa fondatrice. Les chapitres des cuisines sont enseignés par leurs auteurs, fondateurs de Heritage of Flavours : ainsi, chaque fondateur devient le maître des Gardiens de sa cuisine.</span><span lang="ru">Основы системы преподаёт её основательница. Главы кухонь ведут их авторы — основатели Heritage of Flavours: так каждый основатель становится учителем Хранителей своей кухни.</span><span lang="en">The foundations of the system are taught by its founder. The cuisine chapters are taught by their authors, founders of Heritage of Flavours: in this way, each founder becomes the master of the Keepers of their cuisine.</span><span lang="es">Los fundamentos del sistema los enseña su fundadora. Los capítulos de las cocinas los imparten sus autores, fundadores de Heritage of Flavours: así, cada fundador se convierte en el maestro de los Guardianes de su cocina.</span><span lang="pt">Os fundamentos do sistema são ensinados pela sua fundadora. Os capítulos das cozinhas são ensinados pelos seus autores, fundadores da Heritage of Flavours: assim, cada fundador torna-se o mestre dos Guardiões da sua cozinha.</span><span lang="ar">تدرّس المؤسِّسة أسس النظام، ويدرّس فصولَ المطابخ مؤلفوها من مؤسسي Heritage of Flavours، وهكذا يصبح كل مؤسس معلّمًا لحرّاس مطبخه.</span><span lang="zh">体系基础由其创始人讲授。各菜系章节由其作者——Heritage of Flavours 的创始人讲授：这样，每位创始人都成为本菜系守护者的导师。</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow"><span lang="fr">Le chemin du juge</span><span lang="ru">Путь судьи</span><span lang="en">The judge’s path</span><span lang="es">El camino del juez</span><span lang="pt">O caminho do juiz</span><span lang="ar">طريق الحَكَم</span><span lang="zh">评委之路</span></div>
+        <h2><span lang="fr">De la théorie au certificat</span><span lang="ru">От теории до сертификата</span><span lang="en">From theory to certificate</span><span lang="es">De la teoría al certificado</span><span lang="pt">Da teoria ao certificado</span><span lang="ar">من النظري إلى الشهادة</span><span lang="zh">从理论到证书</span></h2>
+        <ol class="steps">
+          <li><b><span lang="fr">Théorie en ligne</span><span lang="ru">Теория онлайн</span><span lang="en">Theory online</span><span lang="es">Teoría en línea</span><span lang="pt">Teoria online</span><span lang="ar">النظري عبر الإنترنت</span><span lang="zh">线上理论</span></b><span lang="fr">Les fondements du système et le chapitre de la cuisine, avec des questions de contrôle après chaque partie. Valable 12 mois.</span><span lang="ru">Основы системы и глава кухни, с проверочными вопросами после каждой части. Действует 12 месяцев.</span><span lang="en">The foundations of the system and the cuisine chapter, with check questions after each part. Valid for 12 months.</span><span lang="es">Los fundamentos del sistema y el capítulo de la cocina, con preguntas de control tras cada parte. Válida 12 meses.</span><span lang="pt">Os fundamentos do sistema e o capítulo da cozinha, com perguntas de controlo após cada parte. Válida 12 meses.</span><span lang="ar">أسس النظام وفصل المطبخ، مع أسئلة مراجعة بعد كل جزء. صالح لمدة 12 شهرًا.</span><span lang="zh">体系基础和菜系章节，每部分之后附有检测题。有效期12个月。</span></li>
+          <li><b><span lang="fr">Pratique au festival</span><span lang="ru">Практика на фестивале</span><span lang="en">Practice at a festival</span><span lang="es">Práctica en un festival</span><span lang="pt">Prática num festival</span><span lang="ar">التطبيق في المهرجان</span><span lang="zh">节庆现场实践</span></b><span lang="fr">Dans n’importe quel festival HF proposant une catégorie de sa cuisine : de véritables travaux de concours.</span><span lang="ru">На любом фестивале HF с категорией этой кухни — настоящие конкурсные работы.</span><span lang="en">At any HF festival offering a category in that cuisine: real competition entries.</span><span lang="es">En cualquier festival HF que ofrezca una categoría de su cocina: verdaderos trabajos de concurso.</span><span lang="pt">Em qualquer festival HF com uma categoria da sua cozinha: verdadeiros trabalhos de concurso.</span><span lang="ar">في أي مهرجان لـ HF يتضمن فئة لمطبخه: أعمال تنافسية حقيقية.</span><span lang="zh">在任何设有该菜系类别的 HF 节庆：真实的参赛作品。</span></li>
+          <li><b><span lang="fr">Examen</span><span lang="ru">Экзамен</span><span lang="en">Exam</span><span lang="es">Examen</span><span lang="pt">Exame</span><span lang="ar">الامتحان</span><span lang="zh">考试</span></b><span lang="fr">Sur le chapitre de la cuisine choisie.</span><span lang="ru">По главе выбранной кухни.</span><span lang="en">On the chapter of the chosen cuisine.</span><span lang="es">Sobre el capítulo de la cocina elegida.</span><span lang="pt">Sobre o capítulo da cozinha escolhida.</span><span lang="ar">في فصل المطبخ المختار.</span><span lang="zh">针对所选菜系的章节。</span></li>
+          <li><b><span lang="fr">Certificat et passeport</span><span lang="ru">Сертификат и паспорт</span><span lang="en">Certificate and passport</span><span lang="es">Certificado y pasaporte</span><span lang="pt">Certificado e passaporte</span><span lang="ar">الشهادة والجواز</span><span lang="zh">证书与护照</span></b><span lang="fr">Le certificat est remis au festival ; le passeport du juge reçoit le tampon du chapitre, avec le lieu et la date.</span><span lang="ru">Сертификат вручается на фестивале; в паспорт судьи ставится штамп главы с местом и датой.</span><span lang="en">The certificate is awarded at the festival; the judge’s passport receives the chapter stamp, with place and date.</span><span lang="es">El certificado se entrega en el festival; el pasaporte del juez recibe el sello del capítulo, con el lugar y la fecha.</span><span lang="pt">O certificado é entregue no festival; o passaporte do juiz recebe o carimbo do capítulo, com o local e a data.</span><span lang="ar">تُسلَّم الشهادة في المهرجان، ويُختَم جواز الحَكَم بختم الفصل مع المكان والتاريخ.</span><span lang="zh">证书在节庆现场颁发；评委护照上加盖该章节印章，并注明地点和日期。</span></li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow"><span lang="fr">Document</span><span lang="ru">Документ</span><span lang="en">Document</span><span lang="es">Documento</span><span lang="pt">Documento</span><span lang="ar">الوثيقة</span><span lang="zh">文件</span></div>
+        <h2><span lang="fr">Le certificat de juge HF</span><span lang="ru">Сертификат судьи HF</span><span lang="en">The HF judge certificate</span><span lang="es">El certificado de juez HF</span><span lang="pt">O certificado de juiz HF</span><span lang="ar">شهادة حَكَم HF</span><span lang="zh">HF 评委证书</span></h2>
+        <div class="cert">
+          <img src="img/certificate.jpg" alt="">
+          <div class="body"><p><span lang="fr">Chaque certificat porte un numéro vérifiable au registre public des juges HF, le niveau du juge, la cuisine pour laquelle il est habilité et le lieu de sa pratique. Il est signé par la Présidente du Conseil et par l’auteur du chapitre.</span><span lang="ru">На каждом сертификате — номер, который можно проверить в открытом реестре судей HF, уровень судьи, кухня, по которой у него допуск, и место практики. Его подписывают Председатель Совета и автор главы.</span><span lang="en">Each certificate bears a number that can be verified in the public registry of HF judges, the judge’s level, the cuisine they are accredited for and the place of their practice. It is signed by the President of the Council and by the author of the chapter.</span><span lang="es">Cada certificado lleva un número verificable en el registro público de jueces HF, el nivel del juez, la cocina para la que está habilitado y el lugar de su práctica. Lo firman la Presidenta del Consejo y el autor del capítulo.</span><span lang="pt">Cada certificado tem um número verificável no registo público de juízes HF, o nível do juiz, a cozinha para a qual está habilitado e o local da sua prática. É assinado pela Presidente do Conselho e pelo autor do capítulo.</span><span lang="ar">تحمل كل شهادة رقمًا يمكن التحقق منه في السجل العام لحكّام HF، ومستوى الحَكَم، والمطبخ المعتمَد له، ومكان تطبيقه العملي. وتوقّعها رئيسة المجلس ومؤلف الفصل.</span><span lang="zh">每张证书都有一个可在 HF 评委公开登记册中查验的编号，并注明评委级别、其获资质的菜系以及实践地点。证书由理事会主席和章节作者共同签署。</span></p><p style="margin:0;font-size:13.5px;color:var(--mut)"><span lang="fr">Exemple de certificat.</span><span lang="ru">Образец сертификата.</span><span lang="en">Sample certificate.</span><span lang="es">Ejemplo de certificado.</span><span lang="pt">Exemplo de certificado.</span><span lang="ar">نموذج شهادة.</span><span lang="zh">证书样本。</span></p></div>
+        </div>
+      </div>
+    </main>
+
+    <aside>
+      <div class="card">
+        <h2><span lang="fr">Programme</span><span lang="ru">Программа</span><span lang="en">Programme</span><span lang="es">Programa</span><span lang="pt">Programa</span><span lang="ar">البرنامج</span><span lang="zh">课程大纲</span></h2>
+        <div class="progress"><i></i></div>
+        <div class="pnote2"><span lang="fr">2 leçons sur 10 terminées</span><span lang="ru">Пройдено 2 урока из 10</span><span lang="en">2 of 10 lessons completed</span><span lang="es">2 de 10 lecciones completadas</span><span lang="pt">2 de 10 aulas concluídas</span><span lang="ar">أُنجز درسان من 10</span><span lang="zh">已完成10课中的2课</span></div>
+        <ul class="mods">
+          <li class="mod"><div class="mh"><span lang="fr">Partie 1 · Les fondements</span><span lang="ru">Часть 1 · Основы</span><span lang="en">Part 1 · Foundations</span><span lang="es">Parte 1 · Los fundamentos</span><span lang="pt">Parte 1 · Os fundamentos</span><span lang="ar">الجزء 1 · الأسس</span><span lang="zh">第一部分 · 基础</span></div><ol>
+            <li class="done"><span class="st"></span><span><span lang="fr">Chaque cuisine selon ses propres lois</span><span lang="ru">Каждая кухня — по своим законам</span><span lang="en">Every cuisine by its own laws</span><span lang="es">Cada cocina según sus propias leyes</span><span lang="pt">Cada cozinha segundo as suas próprias leis</span><span lang="ar">لكل مطبخ قوانينه الخاصة</span><span lang="zh">每种菜系遵循自己的法则</span></span></li>
+            <li class="done"><span class="st"></span><span><span lang="fr">Deux volets : maîtrise et tradition</span><span lang="ru">Две части оценки: мастерство и традиция</span><span lang="en">Two parts: mastery and tradition</span><span lang="es">Dos partes: maestría y tradición</span><span lang="pt">Duas partes: mestria e tradição</span><span lang="ar">شقّان: الإتقان والتقاليد</span><span lang="zh">两个部分：技艺与传统</span></span></li>
+            <li class="cur"><span class="st"></span><span><span lang="fr">Le Gardien des Traditions et la moitié de la note</span><span lang="ru">Хранитель традиций и половина оценки</span><span lang="en">The Keeper of Traditions and half of the score</span><span lang="es">El Guardián de las Tradiciones y la mitad de la nota</span><span lang="pt">O Guardião das Tradições e metade da nota</span><span lang="ar">حارس التقاليد ونصف الدرجة</span><span lang="zh">传统守护者与一半的分数</span></span></li>
+            <li><span class="st"></span><span><span lang="fr">La fiche du participant</span><span lang="ru">Карточка участника</span><span lang="en">The participant card</span><span lang="es">La ficha del participante</span><span lang="pt">A ficha do participante</span><span lang="ar">بطاقة المشارك</span><span lang="zh">参赛者卡片</span></span></li>
+          </ol></li>
+          <li class="mod"><div class="mh"><span lang="fr">Partie 2 · À la table du jury</span><span lang="ru">Часть 2 · За судейским столом</span><span lang="en">Part 2 · At the jury table</span><span lang="es">Parte 2 · En la mesa del jurado</span><span lang="pt">Parte 2 · À mesa do júri</span><span lang="ar">الجزء 2 · على طاولة التحكيم</span><span lang="zh">第二部分 · 评审席上</span></div><ol>
+            <li><span class="st"></span><span><span lang="fr">La grille d’évaluation HF</span><span lang="ru">Оценочный лист HF</span><span lang="en">The HF scoring sheet</span><span lang="es">La hoja de evaluación HF</span><span lang="pt">A grelha de avaliação HF</span><span lang="ar">ورقة تقييم HF</span><span lang="zh">HF 评分表</span></span></li>
+            <li><span class="st"></span><span><span lang="fr">Les formats des catégories</span><span lang="ru">Форматы категорий</span><span lang="en">Category formats</span><span lang="es">Los formatos de las categorías</span><span lang="pt">Os formatos das categorias</span><span lang="ar">صيغ الفئات</span><span lang="zh">类别形式</span></span></li>
+            <li><span class="st"></span><span><span lang="fr">Le briefing du jury</span><span lang="ru">Брифинг жюри</span><span lang="en">The jury briefing</span><span lang="es">La reunión informativa del jurado</span><span lang="pt">O briefing do júri</span><span lang="ar">إحاطة لجنة التحكيم</span><span lang="zh">评审团简报</span></span></li>
+            <li><span class="st"></span><span><span lang="fr">Le Code d’honneur HF</span><span lang="ru">Кодекс чести HF</span><span lang="en">The HF Code of Honour</span><span lang="es">El Código de honor HF</span><span lang="pt">O Código de honra HF</span><span lang="ar">ميثاق الشرف لـ HF</span><span lang="zh">HF 荣誉准则</span></span></li>
+          </ol></li>
+          <li class="mod"><div class="mh"><span lang="fr">Partie 3 · Chapitre de la cuisine</span><span lang="ru">Часть 3 · Глава кухни</span><span lang="en">Part 3 · The cuisine chapter</span><span lang="es">Parte 3 · Capítulo de la cocina</span><span lang="pt">Parte 3 · Capítulo da cozinha</span><span lang="ar">الجزء 3 · فصل المطبخ</span><span lang="zh">第三部分 · 菜系章节</span></div><ol>
+            <li><span class="st"></span><span><span lang="fr">Les lois de la cuisine choisie</span><span lang="ru">Законы выбранной кухни</span><span lang="en">The laws of the chosen cuisine</span><span lang="es">Las leyes de la cocina elegida</span><span lang="pt">As leis da cozinha escolhida</span><span lang="ar">قوانين المطبخ المختار</span><span lang="zh">所选菜系的法则</span></span></li>
+            <li><span class="st"></span><span><span lang="fr">Plats disputés et variantes d’une même tradition</span><span lang="ru">Спорные блюда и варианты одной традиции</span><span lang="en">Disputed dishes and variants of one tradition</span><span lang="es">Platos disputados y variantes de una misma tradición</span><span lang="pt">Pratos disputados e variantes de uma mesma tradição</span><span lang="ar">الأطباق المتنازع عليها وتنويعات التقليد الواحد</span><span lang="zh">有争议的菜肴与同一传统的不同版本</span></span></li>
+          </ol></li>
+          <li class="mod lock"><div class="mh"><span lang="fr">Ensuite</span><span lang="ru">Дальше</span><span lang="en">Then</span><span lang="es">Después</span><span lang="pt">Depois</span><span lang="ar">بعد ذلك</span><span lang="zh">之后</span></div><ol>
+            <li><span class="st"></span><span><span lang="fr">Pratique au festival et examen</span><span lang="ru">Практика на фестивале и экзамен</span><span lang="en">Festival practice and exam</span><span lang="es">Práctica en un festival y examen</span><span lang="pt">Prática num festival e exame</span><span lang="ar">التطبيق في المهرجان والامتحان</span><span lang="zh">节庆实践与考试</span></span></li>
+          </ol></li>
+        </ul>
+      </div>
+      <div class="card help">
+        <h2 style="font-size:24px"><span lang="fr">Une question ?</span><span lang="ru">Есть вопрос?</span><span lang="en">A question?</span><span lang="es">¿Una pregunta?</span><span lang="pt">Uma pergunta?</span><span lang="ar">لديك سؤال؟</span><span lang="zh">有问题吗？</span></h2>
+        <p style="font-size:14.5px;color:var(--mut)"><span lang="fr">Accès, formation, certificat : l’équipe de l’Académie vous répond. Pour un recours sur une note : le Médiateur HF.</span><span lang="ru">Доступ, обучение, сертификат — ответит команда Академии. Апелляция на оценку — омбудсмен HF.</span><span lang="en">Access, training, certificate: the Academy team will answer. To appeal a score: the HF Mediator.</span><span lang="es">Acceso, formación, certificado: el equipo de la Academia le responde. Para recurrir una nota: el Mediador HF.</span><span lang="pt">Acesso, formação, certificado: a equipa da Academia responde-lhe. Para recorrer de uma nota: o Mediador HF.</span><span lang="ar">الدخول، التدريب، الشهادة: فريق الأكاديمية يجيبك. وللطعن في درجة: وسيط HF.</span><span lang="zh">访问、培训、证书：学院团队为您解答。如需对评分提出申诉：请联系 HF 调解员。</span></p>
+        <a href="#"><span lang="fr">Écrire à l’Académie</span><span lang="ru">Написать в Академию</span><span lang="en">Write to the Academy</span><span lang="es">Escribir a la Academia</span><span lang="pt">Escrever à Academia</span><span lang="ar">راسل الأكاديمية</span><span lang="zh">联系学院</span></a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="motto"><span lang="fr">Chaque cuisine a son histoire. Chaque histoire mérite d’être entendue.</span><span lang="ru">У каждой кухни своя история. Каждая история заслуживает быть услышанной.</span><span lang="en">Every cuisine has its story. Every story deserves to be heard.</span><span lang="es">Cada cocina tiene su historia. Cada historia merece ser escuchada.</span><span lang="pt">Cada cozinha tem a sua história. Cada história merece ser ouvida.</span><span lang="ar">لكل مطبخ حكايته. وكل حكاية تستحق أن تُسمَع.</span><span lang="zh">每一种菜系都有它的故事。每一个故事都值得被聆听。</span></div>
+  <div>© Heritage of Flavours · World Culinary Council · 2026</div>
+</footer>
+
+<script>
+const setL=l=>{document.body.className='l-'+l;document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');localStorage.setItem('hf-l',l);const sel=document.querySelector('.langsel');if(sel)sel.value=l};
+document.querySelector('.langsel').onchange=e=>setL(e.target.value);
+setL(localStorage.getItem('hf-l')||'fr');
+const T={ok:{ar:'بالضبط: صوت الحارس يساوي نصف درجة التقاليد، أي ما يعادل جميع الحكّام الآخرين مجتمعين.',zh:'完全正确：守护者的意见占传统分的一半，相当于其他所有评委的总和。',en:'Exactly: the Keeper’s voice is worth half of the tradition score, as much as all the other judges combined.',es:'Exacto: la voz del Guardián vale la mitad de la nota de tradición, tanto como todos los demás jueces juntos.',pt:'Exatamente: a voz do Guardião vale metade da nota de tradição, tanto quanto todos os outros juízes juntos.',fr:'Exactement : la voix du Gardien vaut la moitié de la note de tradition, autant que tous les autres juges réunis.',ru:'Верно: голос Хранителя — половина оценки традиции, столько же, сколько у всех остальных судей вместе.'},no:{ar:'ليس تمامًا. ارجع إلى الدرس: يجب أن يكون لمعرفة المطبخ وزن حقيقي في القرار.',zh:'不太对。请回到课程：对菜系的了解必须真正影响结果。',en:'Not quite. Go back to the lesson: knowledge of the cuisine must truly weigh in the decision.',es:'No del todo. Vuelva a la lección: el conocimiento de la cocina debe pesar de verdad en la decisión.',pt:'Não exatamente. Volte à aula: o conhecimento da cozinha deve pesar realmente na decisão.',fr:'Pas tout à fait. Relisez la leçon : le savoir de la cuisine doit peser réellement dans la décision.',ru:'Не совсем. Вернитесь к уроку: знание кухни должно по-настоящему весить в решении.'}};
+document.querySelectorAll('.quiz label').forEach(l=>l.onclick=()=>{document.querySelectorAll('.quiz label').forEach(x=>x.classList.remove('ok','no'));const r=l.dataset.r;l.classList.add(r);const lang=document.body.className.slice(2);document.getElementById('fb').textContent=T[r][lang]});
+</script>
+<script src="media/hf-demo-subs.js"></script>
+<script src="player.js"></script>
+</body>
+</html>
