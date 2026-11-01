@@ -297,7 +297,7 @@ body.l-ar{line-height:1.8}
 </footer>
 
 <script>
-const setL=l=>{document.body.className='l-'+l;document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');localStorage.setItem('hf-l',l);const sel=document.querySelector('.langsel');if(sel)sel.value=l};
+const setL=l=>{document.body.className='l-'+l;document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');localStorage.setItem('hf-l',l);const sel=document.querySelector('.langsel');if(sel)sel.value=l;document.dispatchEvent(new CustomEvent('hf-lang',{detail:l}))};
 document.querySelector('.langsel').onchange=e=>setL(e.target.value);
 setL(localStorage.getItem('hf-l')||'fr');
 </script>

@@ -17,6 +17,7 @@ document.querySelectorAll('.mlp').forEach(box=>{
   v.addEventListener('volumechange',()=>{a.volume=v.volume;a.muted=v.muted;if((v.muted||v.volume===0)&&!ccOn){ccOn=true;subs()}});
   v.addEventListener('timeupdate',()=>{if(!v.paused&&Math.abs(a.currentTime-v.currentTime)>0.25)a.currentTime=v.currentTime});
   v.addEventListener('ended',()=>a.pause());
+  document.addEventListener('hf-lang',e=>setTrack(e.detail));
   const site=(localStorage.getItem('hf-l')||'fr');
   setTrack(['fr','ru','en','es','pt','ar','zh'].includes(site)?site:'fr');
 });
