@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Heritage of Flavours · Espace du fondateur (démonstration)</title>
+<link rel="icon" href="img/seal.svg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f0e4;--paper:#fffaf0;--ink:#2e2620;--mut:#7a6650;--gold:#9a7430;--gold2:#c9a25a;--goldsoft:#f1e6cc;--line:#e6d9bf;--laurel:#24392d;--laurel2:#2f4a3a;--green:#3f6b4f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Inter,'Noto Sans SC','Noto Naskh Arabic',-apple-system,'Segoe UI',sans-serif}
+body:not(.l-fr) [lang=fr]{display:none!important} body:not(.l-en) [lang=en]{display:none!important} body:not(.l-es) [lang=es]{display:none!important} body:not(.l-pt) [lang=pt]{display:none!important} body:not(.l-ru) [lang=ru]{display:none!important} body:not(.l-ar) [lang=ar]{display:none!important} body:not(.l-zh) [lang=zh]{display:none!important}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.build{background:#efe3c4;color:#5c4513;font-size:14px;text-align:center;padding:8px 16px;border-bottom:1px solid var(--line)}
+.build b{color:#3d2d08}
+.top{position:sticky;top:0;z-index:10;background:rgba(36,57,45,.97);color:#efe6cc}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:#f0dca3}
+.brand img{width:30px;height:30px}
+.brand small{font-family:Inter;font-size:11px;letter-spacing:.12em;color:#c9bfa0;margin-left:6px}
+.right{display:flex;align-items:center;gap:14px}
+.back{font-size:14px;text-decoration:none;opacity:.85}
+.cab{background:#d8b66f;color:var(--laurel);font-weight:600;font-size:13.5px;padding:7px 16px;border-radius:20px;text-decoration:none}
+.lang{display:flex;gap:4px}
+.lang button{background:none;border:1px solid rgba(240,220,163,.4);color:#efe6cc;font:600 12px Inter;padding:4px 9px;border-radius:14px;cursor:pointer}
+.lang button.on{background:#f0dca3;color:var(--laurel);border-color:#f0dca3}
+/* course head */
+.head{padding:40px 0 6px}
+.tag{display:inline-flex;align-items:center;gap:9px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 15px 6px 12px;font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--mut)}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+h1{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-weight:600;font-size:clamp(34px,4.6vw,54px);line-height:1.05;margin:16px 0 12px;max-width:20ch}
+h1 em{font-style:normal;color:var(--gold)}
+.sub{font-size:17.5px;color:var(--mut);max-width:64ch;margin-bottom:22px}
+.meta{display:flex;flex-wrap:wrap;gap:10px}
+.meta>div{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:11px 18px;min-width:140px}
+.meta .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.meta .v{font-size:16.5px;font-weight:600;margin-top:2px}
+/* layout */
+.layout{display:grid;grid-template-columns:1fr 340px;gap:26px;align-items:start;padding:30px 0 60px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 28px;margin-bottom:22px}
+.card h2{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:29px;font-weight:600;line-height:1.1;margin-bottom:8px}
+.card h3{font-size:15px;font-weight:600;margin:22px 0 8px}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+p{margin:0 0 12px}
+/* player */
+.player{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#35543f 0%,#24392d 60%,#1b2b22 100%);display:grid;place-items:center;text-align:center;color:#efe6cc;padding:24px}
+.player .logo{width:92px;border-radius:12px;opacity:.95;margin:0 auto 14px;display:block}
+.player .play{width:64px;height:64px;border-radius:50%;background:rgba(240,220,163,.15);border:2px solid rgba(240,220,163,.6);display:grid;place-items:center;margin:0 auto 12px}
+.player .play::after{content:"";margin-left:5px;border-left:18px solid #f0dca3;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.player .cap{font-size:14px;color:#d8cfb4;max-width:46ch;margin:0 auto}
+.player .wm{position:absolute;top:14px;right:18px;font-size:12px;color:rgba(240,220,163,.35);letter-spacing:.08em}
+.player .bar{position:absolute;left:0;right:0;bottom:0;height:38px;background:rgba(0,0,0,.35);display:flex;align-items:center;gap:12px;padding:0 14px;font-size:12.5px}
+.player .bar .track{flex:1;height:3px;background:rgba(255,255,255,.25);border-radius:2px;position:relative}
+.player .bar .track i{position:absolute;left:0;top:0;bottom:0;width:24%;background:var(--gold2);border-radius:2px}
+.pnote{font-size:13.5px;color:var(--mut);margin:12px 0 0;padding-left:14px;border-left:3px solid var(--goldsoft)}
+.ltitle{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:27px;font-weight:600;line-height:1.15;margin:20px 0 4px}
+.lsub{font-size:14.5px;color:var(--mut);margin:0}
+/* files */
+.files{list-style:none;margin:12px 0 0}
+.files li{border-top:1px solid var(--line)}.files li:first-child{border-top:none}
+.files a{display:flex;align-items:center;gap:14px;padding:12px 4px;text-decoration:none;font-weight:500}
+.files .ext{flex:0 0 auto;width:44px;height:44px;border-radius:11px;background:var(--goldsoft);color:var(--gold);display:grid;place-items:center;font-size:10.5px;font-weight:700;letter-spacing:.04em}
+.files .nm{flex:1;font-size:15px}
+.files .sz{font-size:12.5px;color:var(--mut);white-space:nowrap}
+/* quiz */
+.quiz .q{font-weight:600;margin-bottom:10px}
+.quiz label{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin-bottom:8px;cursor:pointer;background:var(--bg);font-size:15px}
+.quiz label.ok{border-color:var(--green);background:#eaf2ec}
+.quiz label.no{border-color:#b9603f;background:#f8ebe4}
+.quiz .fb{font-size:14px;color:var(--mut);margin-top:6px;min-height:22px}
+/* teacher */
+.teacher{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.ava{flex:0 0 auto;width:88px;height:88px;border-radius:18px;background:var(--laurel2);display:grid;place-items:center;font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:32px;color:#f0dca3}
+.teacher .nm{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:25px;font-weight:600;line-height:1.1}
+.teacher .role{color:var(--gold);font-weight:600;font-size:14px;margin:3px 0 10px}
+/* steps */
+.steps{list-style:none;counter-reset:s;margin-top:12px}
+.steps li{position:relative;padding-left:44px;margin-bottom:16px;font-size:15px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:-1px;width:29px;height:29px;border-radius:50%;background:var(--goldsoft);color:var(--gold);display:grid;place-items:center;font-weight:700;font-size:14px}
+.steps b{display:block}
+.cert{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.cert img{width:300px;max-width:100%;border-radius:10px;box-shadow:0 10px 26px rgba(36,57,45,.22)}
+.cert .body{flex:1 1 260px}
+/* sidebar */
+aside .card{position:sticky;top:76px}
+.progress{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:12px 0 6px}
+.progress i{display:block;height:100%;width:20%;background:var(--gold)}
+.pnote2{font-size:13px;color:var(--mut);margin-bottom:16px}
+.mods{list-style:none}
+.mod{margin-bottom:16px}
+.mod .mh{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:6px}
+.mod ol{list-style:none}
+.mod ol li{display:flex;gap:11px;align-items:flex-start;padding:8px 10px;border-radius:11px;font-size:14.5px;line-height:1.4}
+.mod ol li.done{color:var(--mut)}
+.mod ol li.cur{background:var(--goldsoft);font-weight:600}
+.st{flex:0 0 auto;width:18px;height:18px;border-radius:50%;border:2px solid var(--line);margin-top:2px;position:relative}
+.done .st{background:var(--green);border-color:var(--green)}
+.done .st::after{content:"";position:absolute;left:5px;top:1.5px;width:4px;height:8px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.cur .st{border-color:var(--gold);background:radial-gradient(circle,var(--gold) 42%,transparent 44%)}
+.lock{opacity:.6}
+.help a{display:block;text-align:center;border:1px solid var(--line);border-radius:30px;padding:10px;text-decoration:none;font-weight:600;font-size:14.5px;background:var(--bg)}
+footer{background:#1b2b22;color:#bfb49a;text-align:center;padding:34px 0;font-size:14px}
+footer .motto{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-style:italic;font-size:21px;color:var(--gold2);margin-bottom:8px}
+@media(max-width:940px){.layout{grid-template-columns:1fr}aside .card{position:static}.back{display:none}}
+@media(max-width:560px){.card{padding:20px 18px}.brand small{display:none}.cab{display:none}}
+.mlp{border-radius:16px;overflow:hidden;background:#1b2b22;box-shadow:0 18px 44px rgba(36,57,45,.25)}
+.mlp video{display:block;width:100%;aspect-ratio:16/9;background:#1b2b22}
+.mlp-lang{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:10px 14px;background:#24392d;color:#d8cfb4;font-size:13px}
+.mlp-lang span.lbl{margin-right:6px;letter-spacing:.06em}
+.mlp-lang button{background:none;border:1px solid rgba(240,220,163,.4);color:#efe6cc;font:600 12px Inter,'Noto Sans SC',sans-serif;padding:4px 10px;border-radius:14px;cursor:pointer}
+.mlp video::cue{background:rgba(20,30,24,.78);color:#f6efd9;font-family:Inter,sans-serif}
+.mlp-lang button.on{background:#f0dca3;color:#24392d;border-color:#f0dca3}
+.top .wrap{max-width:1320px}.brand,.menu a,.acad,.cab,.back{white-space:nowrap}.menu{gap:16px}
+@media(max-width:1240px){.menu{display:none}}
+body.l-ar *{letter-spacing:0!important}
+body.l-ar{line-height:1.8}
+.mlp{direction:ltr}
+.langsel{background:transparent;border:1px solid rgba(240,220,163,.45);color:#f0dca3;font:600 13px Inter,'Noto Sans SC','Noto Naskh Arabic',sans-serif;padding:6px 10px;border-radius:16px;cursor:pointer}
+.langsel option{color:#2e2620;background:#fffaf0}
+.langsel{min-width:132px}
+@media(max-width:600px){.brand{font-size:14px;letter-spacing:.06em}.brand img{width:24px;height:24px}.acad,.cab{display:none}}
+
+.dash{padding:26px 0 60px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:22px}
+.kpi{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.kpi .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600;min-height:30px}
+.kpi .v{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:40px;font-weight:600;line-height:1.05;margin-top:4px;color:var(--ink)}
+.kpi .s{font-size:13px;color:var(--mut);margin-top:2px}
+.kpi.hl{background:var(--laurel2);border-color:var(--laurel2)}
+.kpi.hl .k,.kpi.hl .s{color:#d9cfae}.kpi.hl .v{color:#f3dfa6}
+.grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.grid2 .card{margin-bottom:0}
+.row{margin-bottom:22px}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:#fffaf0;font-size:13px;padding:6px 10px;border-radius:8px;white-space:nowrap;transform:translate(-50%,-110%);opacity:0;transition:opacity .12s}
+.funnel .fr{display:grid;grid-template-columns:150px 1fr 44px;gap:12px;align-items:center;margin:10px 0;font-size:14.5px}
+.funnel .b{height:22px;background:var(--line);border-radius:6px;overflow:hidden}
+.funnel .b i{display:block;height:100%;background:var(--green);border-radius:6px 4px 4px 6px}
+.funnel .n{font-weight:600;text-align:right}
+table.t{width:100%;border-collapse:collapse;font-size:14.5px}
+table.t th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:600;text-align:start;padding:8px 8px;border-bottom:1px solid var(--line)}
+table.t td{padding:10px 8px;border-bottom:1px solid var(--line)}
+table.t td.num,table.t th.num{text-align:end;font-variant-numeric:tabular-nums;white-space:nowrap}
+table.t tr:last-child td{border-bottom:none}
+.code{font-family:ui-monospace,Consolas,monospace;font-size:13px;background:var(--goldsoft);color:#5c4513;padding:2px 7px;border-radius:6px}
+.calc{font-size:15px}
+.calc .ln{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.calc .ln span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.calc .ln.sub{font-weight:600;border-bottom:1px solid var(--line)}
+.calc .split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.calc .split>div{border-radius:14px;padding:12px 14px;background:var(--bg);border:1px solid var(--line)}
+.calc .split>div.me{background:var(--laurel2);border-color:var(--laurel2);color:#efe6cc}
+.calc .split .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;opacity:.8}
+.calc .split .v{font-family:'Cormorant Garamond','Noto Serif SC','Noto Naskh Arabic',serif;font-size:30px;font-weight:600}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.pill.ok{background:#e3efe6;color:#2d5a3b}.pill.wait{background:#f4ead2;color:#7a5a17}
+.pill.ok::before{content:"✓ "}.pill.wait::before{content:"◷ "}
+.note{font-size:13.5px;color:var(--mut);margin-top:12px;padding-left:14px;border-left:3px solid var(--goldsoft)}
+.files a{cursor:default}
+.kpi .v,.kpi .s,td.num,.calc .ln span:last-child,.split .v{unicode-bidi:isolate}
+body.l-ar .kpi .v,body.l-ar td.num,body.l-ar .calc .ln span:last-child,body.l-ar .split .v{direction:ltr}
+body.l-ar td.num{text-align:left}
+body.l-ar .kpi .v,body.l-ar .split .v{text-align:right}
+.funnel .b{display:flex}
+@media(max-width:940px){.grid2{grid-template-columns:1fr}.funnel .fr{grid-template-columns:110px 1fr 40px}}
+</style>
+</head>
+<body class="l-fr">
+<div class="build"><span lang="fr"><b>Démonstration.</b> Voici à quoi pourrait ressembler l’espace d’un fondateur. Tous les chiffres, sommes et codes sont fictifs, à titre d’exemple ; les prix de chaque région sont fixés avec son fondateur.</span><span lang="ru"><b>Демо.</b> Так может выглядеть кабинет основателя. Все цифры, суммы и коды условные — для наглядного примера; цены для каждого региона устанавливаются вместе с его основателем.</span><span lang="en"><b>Demo.</b> This is what a founder’s area could look like. All figures, amounts and codes are fictitious, for illustration only; prices for each region are set together with its founder.</span><span lang="es"><b>Demostración.</b> Así podría ser el área de un fundador. Todas las cifras, importes y códigos son ficticios, a modo de ejemplo; los precios de cada región se fijan junto con su fundador.</span><span lang="pt"><b>Demonstração.</b> Assim poderia ser a área de um fundador. Todos os números, montantes e códigos são fictícios, apenas como exemplo; os preços de cada região são definidos com o seu fundador.</span><span lang="ar"><b>عرض تجريبي.</b> هكذا يمكن أن تبدو مساحة المؤسِّس. جميع الأرقام والمبالغ والرموز افتراضية للتوضيح فقط؛ وتُحدَّد أسعار كل منطقة بالاتفاق مع مؤسِّسها.</span><span lang="zh"><b>示范。</b>创始人空间可能是这个样子。所有数字、金额和代码均为虚构，仅作示例；各地区的价格与该地区的创始人共同确定。</span></div>
+<div class="top"><div class="wrap">
+<a class="brand" href="index.html"><img src="img/seal.svg" alt="">Heritage of Flavours<small><span lang="fr">Fondateurs</span><span lang="ru">Основатели</span><span lang="en">Founders</span><span lang="es">Fundadores</span><span lang="pt">Fundadores</span><span lang="ar">المؤسِّسون</span><span lang="zh">创始人</span></small></a>
+<div class="right">
+<a class="back" href="index.html"><span lang="fr">← Le site</span><span lang="ru">← На сайт</span><span lang="en">← Main site</span><span lang="es">← El sitio</span><span lang="pt">← O site</span><span lang="ar">الموقع →</span><span lang="zh">← 返回网站</span></a>
+<a class="cab" href="#"><span lang="fr">Espace du fondateur</span><span lang="ru">Кабинет основателя</span><span lang="en">Founder’s area</span><span lang="es">Área del fundador</span><span lang="pt">Área do fundador</span><span lang="ar">مساحة المؤسِّس</span><span lang="zh">创始人空间</span></a>
+<div class="lang"><select class="langsel" aria-label="Language"><option value="fr">🌐 Français</option><option value="en">🌐 English</option><option value="es">🌐 Español</option><option value="pt">🌐 Português</option><option value="ru">🌐 Русский</option><option value="ar">🌐 العربية</option><option value="zh">🌐 中文</option></select></div>
+</div></div></div>
+<div class="wrap"><section class="head">
+<span class="tag"><i></i><span lang="fr">Chambre d’Afrique · Espace du fondateur</span><span lang="ru">Африканская палата · Кабинет основателя</span><span lang="en">Chamber of Africa · Founder’s area</span><span lang="es">Cámara de África · Área del fundador</span><span lang="pt">Câmara de África · Área do fundador</span><span lang="ar">الغرفة الأفريقية · مساحة المؤسِّس</span><span lang="zh">非洲分会 · 创始人空间</span></span>
+<h1><span lang="fr">Chapitre <em>Cuisines d’Afrique de l’Ouest</em></span><span lang="ru">Глава <em>«Кухни Западной Африки»</em></span><span lang="en">Chapter <em>Cuisines of West Africa</em></span><span lang="es">Capítulo <em>Cocinas de África Occidental</em></span><span lang="pt">Capítulo <em>Cozinhas da África Ocidental</em></span><span lang="ar">فصل <em>مطابخ غرب أفريقيا</em></span><span lang="zh">章节：<em>西非菜系</em></span></h1>
+<p class="sub"><span lang="fr">Tout ce qui concerne votre chapitre, en temps réel : élèves, paiements, ambassadeurs et votre part. Chaque chiffre provient directement de la plateforme HF — personne ne le saisit à la main.</span><span lang="ru">Всё о вашей главе в реальном времени: ученики, оплаты, амбассадоры и ваша доля. Каждая цифра берётся прямо из платформы HF — вручную её никто не вводит.</span><span lang="en">Everything about your chapter, in real time: students, payments, ambassadors and your share. Every figure comes straight from the HF platform — nobody types it in by hand.</span><span lang="es">Todo sobre su capítulo, en tiempo real: alumnos, pagos, embajadores y su parte. Cada cifra procede directamente de la plataforma HF; nadie la introduce a mano.</span><span lang="pt">Tudo sobre o seu capítulo, em tempo real: alunos, pagamentos, embaixadores e a sua parte. Cada número vem diretamente da plataforma HF — ninguém o introduz à mão.</span><span lang="ar">كل ما يخص فصلك لحظة بلحظة: المتدرّبون والمدفوعات والسفراء وحصتك. كل رقم يأتي مباشرة من منصة HF، ولا يُدخله أحد يدويًا.</span><span lang="zh">关于您章节的一切，实时呈现：学员、付款、大使以及您的分成。每个数字都直接来自 HF 平台，无人手动录入。</span></p>
+<div class="meta">
+<div><div class="k"><span lang="fr">Période</span><span lang="ru">Период</span><span lang="en">Period</span><span lang="es">Periodo</span><span lang="pt">Período</span><span lang="ar">الفترة</span><span lang="zh">期间</span></div><div class="v"><span lang="fr">Année 2027</span><span lang="ru">2027 год</span><span lang="en">Year 2027</span><span lang="es">Año 2027</span><span lang="pt">Ano 2027</span><span lang="ar">عام 2027</span><span lang="zh">2027 年</span></div></div>
+<div><div class="k"><span lang="fr">Région de patronage</span><span lang="ru">Второй регион</span><span lang="en">Patronage region</span><span lang="es">Región de patrocinio</span><span lang="pt">Região de patrocínio</span><span lang="ar">منطقة الرعاية</span><span lang="zh">第二地区</span></div><div class="v"><span lang="fr">au choix du fondateur</span><span lang="ru">на выбор основателя</span><span lang="en">founder’s choice</span><span lang="es">a elección del fundador</span><span lang="pt">à escolha do fundador</span><span lang="ar">يختارها المؤسِّس</span><span lang="zh">由创始人选择</span></div></div>
+<div><div class="k"><span lang="fr">Légats du Codex</span><span lang="ru">Легаты Кодекса</span><span lang="en">Legates of the Codex</span><span lang="es">Legados del Códice</span><span lang="pt">Legados do Códice</span><span lang="ar">مندوبو المدوَّنة</span><span lang="zh">法典使节</span></div><div class="v">3</div></div>
+<div><div class="k"><span lang="fr">Partage</span><span lang="ru">Деление дохода</span><span lang="en">Revenue split</span><span lang="es">Reparto</span><span lang="pt">Partilha</span><span lang="ar">تقاسم الدخل</span><span lang="zh">收入分成</span></div><div class="v">50 / 50</div></div>
+</div></section></div>
+<div class="wrap dash">
+<div class="kpis">
+<div class="kpi"><div class="k"><span lang="fr">Candidatures</span><span lang="ru">Анкеты</span><span lang="en">Applications</span><span lang="es">Solicitudes</span><span lang="pt">Candidaturas</span><span lang="ar">طلبات التسجيل</span><span lang="zh">报名表</span></div><div class="v">64</div><div class="s"><span lang="fr">via le formulaire commun</span><span lang="ru">по общей анкете</span><span lang="en">via the common form</span><span lang="es">por el formulario común</span><span lang="pt">pelo formulário comum</span><span lang="ar">عبر الاستمارة الموحّدة</span><span lang="zh">通过统一报名表</span></div></div>
+<div class="kpi"><div class="k"><span lang="fr">Théorie payée</span><span lang="ru">Оплатили теорию</span><span lang="en">Paid for theory</span><span lang="es">Pagaron la teoría</span><span lang="pt">Pagaram a teoria</span><span lang="ar">دفعوا رسوم النظري</span><span lang="zh">已付理论课</span></div><div class="v">38</div><div class="s"><span lang="fr">élèves de votre chapitre</span><span lang="ru">учеников вашей главы</span><span lang="en">students of your chapter</span><span lang="es">alumnos de su capítulo</span><span lang="pt">alunos do seu capítulo</span><span lang="ar">متدرّبًا في فصلك</span><span lang="zh">名本章节学员</span></div></div>
+<div class="kpi"><div class="k"><span lang="fr">Certificats délivrés</span><span lang="ru">Выдано сертификатов</span><span lang="en">Certificates issued</span><span lang="es">Certificados emitidos</span><span lang="pt">Certificados emitidos</span><span lang="ar">شهادات صادرة</span><span lang="zh">已颁发证书</span></div><div class="v">17</div><div class="s"><span lang="fr">Gardiens des Traditions</span><span lang="ru">Хранителей традиций</span><span lang="en">Keepers of Traditions</span><span lang="es">Guardianes de las Tradiciones</span><span lang="pt">Guardiões das Tradições</span><span lang="ar">حارسًا للتقاليد</span><span lang="zh">名传统守护者</span></div></div>
+<div class="kpi hl"><div class="k"><span lang="fr">Votre part · 2027</span><span lang="ru">Ваша доля · 2027</span><span lang="en">Your share · 2027</span><span lang="es">Su parte · 2027</span><span lang="pt">A sua parte · 2027</span><span lang="ar">حصتك · 2027</span><span lang="zh">您的分成 · 2027</span></div><div class="v">3 110 €</div><div class="s"><span lang="fr">déjà versés : 2 470 €</span><span lang="ru">уже выплачено: 2 470 €</span><span lang="en">already paid: €2,470</span><span lang="es">ya pagado: 2 470 €</span><span lang="pt">já pago: 2 470 €</span><span lang="ar">مدفوع حتى الآن: <bdi dir="ltr">2 470 €</bdi></span><span lang="zh">已支付：2 470 €</span></div></div>
+</div>
+<div class="grid2 row">
+<div class="card"><div class="eyebrow"><span lang="fr">Élèves</span><span lang="ru">Ученики</span><span lang="en">Students</span><span lang="es">Alumnos</span><span lang="pt">Alunos</span><span lang="ar">المتدرّبون</span><span lang="zh">学员</span></div><h2><span lang="fr">Théorie payée, par mois</span><span lang="ru">Оплатили теорию — по месяцам</span><span lang="en">Theory paid, by month</span><span lang="es">Teoría pagada, por mes</span><span lang="pt">Teoria paga, por mês</span><span lang="ar">المسجَّلون في النظري شهريًا</span><span lang="zh">每月支付理论课人数</span></h2>
+<div class="chart" id="chart"><div class="tip" id="tip"></div></div>
+<p class="note"><span lang="fr">Survolez une colonne pour voir le détail.</span><span lang="ru">Наведите на столбик, чтобы увидеть подробности.</span><span lang="en">Hover over a bar to see the details.</span><span lang="es">Pase el cursor sobre una columna para ver el detalle.</span><span lang="pt">Passe o cursor sobre uma coluna para ver o detalhe.</span><span lang="ar">مرِّر المؤشر فوق العمود لرؤية التفاصيل.</span><span lang="zh">将鼠标悬停在柱上查看详情。</span></p></div>
+<div class="card funnel"><div class="eyebrow"><span lang="fr">Parcours</span><span lang="ru">Путь ученика</span><span lang="en">Pathway</span><span lang="es">Recorrido</span><span lang="pt">Percurso</span><span lang="ar">المسار</span><span lang="zh">学习路径</span></div><h2><span lang="fr">De la candidature au certificat</span><span lang="ru">От анкеты до сертификата</span><span lang="en">From application to certificate</span><span lang="es">De la solicitud al certificado</span><span lang="pt">Da candidatura ao certificado</span><span lang="ar">من الطلب إلى الشهادة</span><span lang="zh">从报名到证书</span></h2>
+<div class="fr" data-tip="64"><span><span lang="fr">Candidature</span><span lang="ru">Анкета</span><span lang="en">Application</span><span lang="es">Solicitud</span><span lang="pt">Candidatura</span><span lang="ar">الطلب</span><span lang="zh">报名</span></span><div class="b"><i style="width:100.0%"></i></div><span class="n">64</span></div>
+<div class="fr" data-tip="38"><span><span lang="fr">Théorie payée</span><span lang="ru">Теория оплачена</span><span lang="en">Theory paid</span><span lang="es">Teoría pagada</span><span lang="pt">Teoria paga</span><span lang="ar">دفع النظري</span><span lang="zh">已付理论课</span></span><div class="b"><i style="width:59.4%"></i></div><span class="n">38</span></div>
+<div class="fr" data-tip="21"><span><span lang="fr">Pratique</span><span lang="ru">Практика</span><span lang="en">Practice</span><span lang="es">Práctica</span><span lang="pt">Prática</span><span lang="ar">التطبيق</span><span lang="zh">实践</span></span><div class="b"><i style="width:32.8%"></i></div><span class="n">21</span></div>
+<div class="fr" data-tip="17"><span><span lang="fr">Examen réussi</span><span lang="ru">Экзамен сдан</span><span lang="en">Exam passed</span><span lang="es">Examen aprobado</span><span lang="pt">Exame aprovado</span><span lang="ar">اجتياز الامتحان</span><span lang="zh">通过考试</span></span><div class="b"><i style="width:26.6%"></i></div><span class="n">17</span></div>
+<p class="note"><span lang="fr">La théorie reste valable 12 mois : les élèves sans pratique peuvent encore la passer lors d’un prochain événement HF.</span><span lang="ru">Теория действует 12 месяцев: ученики без практики ещё могут пройти её на ближайшем мероприятии HF.</span><span lang="en">Theory stays valid for 12 months: students without practice can still complete it at an upcoming HF event.</span><span lang="es">La teoría es válida 12 meses: los alumnos sin práctica aún pueden hacerla en un próximo evento HF.</span><span lang="pt">A teoria é válida 12 meses: os alunos sem prática ainda a podem fazer num próximo evento HF.</span><span lang="ar">يبقى النظري صالحًا 12 شهرًا: يمكن لمن لم يُكمل التطبيق أن يُكمله في فعالية HF قادمة.</span><span lang="zh">理论课有效期 12 个月：尚未实践的学员仍可在下一次 HF 赛事中完成。</span></p></div>
+</div>
+<div class="grid2 row">
+<div class="card"><div class="eyebrow"><span lang="fr">Ambassadeurs</span><span lang="ru">Амбассадоры</span><span lang="en">Ambassadors</span><span lang="es">Embajadores</span><span lang="pt">Embaixadores</span><span lang="ar">السفراء</span><span lang="zh">大使</span></div><h2><span lang="fr">Qui amène les élèves</span><span lang="ru">Кто приводит учеников</span><span lang="en">Who brings the students</span><span lang="es">Quién trae a los alumnos</span><span lang="pt">Quem traz os alunos</span><span lang="ar">من يجلب المتدرّبين</span><span lang="zh">谁带来了学员</span></h2>
+<table class="t"><thead><tr><th><span lang="fr">Code</span><span lang="ru">Код</span><span lang="en">Code</span><span lang="es">Código</span><span lang="pt">Código</span><span lang="ar">الرمز</span><span lang="zh">代码</span></th><th><span lang="fr">Pays</span><span lang="ru">Страна</span><span lang="en">Country</span><span lang="es">País</span><span lang="pt">País</span><span lang="ar">البلد</span><span lang="zh">国家</span></th><th class="num"><span lang="fr">Élèves</span><span lang="ru">Учеников</span><span lang="en">Students</span><span lang="es">Alumnos</span><span lang="pt">Alunos</span><span lang="ar">متدرّبون</span><span lang="zh">学员</span></th><th class="num"><span lang="fr">Commission</span><span lang="ru">Комиссия</span><span lang="en">Commission</span><span lang="es">Comisión</span><span lang="pt">Comissão</span><span lang="ar">العمولة</span><span lang="zh">佣金</span></th><th class="num"><span lang="fr">Places offertes</span><span lang="ru">Подарочные места</span><span lang="en">Gift places</span><span lang="es">Plazas regaladas</span><span lang="pt">Lugares oferecidos</span><span lang="ar">مقاعد مجانية</span><span lang="zh">赠送名额</span></th></tr></thead><tbody>
+<tr><td><span class="code">AMB-BF-01</span></td><td><span lang="fr">Burkina Faso</span><span lang="ru">Буркина-Фасо</span><span lang="en">Burkina Faso</span><span lang="es">Burkina Faso</span><span lang="pt">Burquina Faso</span><span lang="ar">بوركينا فاسو</span><span lang="zh">布基纳法索</span></td><td class="num">14</td><td class="num">168 €</td><td class="num">1</td></tr>
+<tr><td><span class="code">AMB-ML-01</span></td><td><span lang="fr">Mali</span><span lang="ru">Мали</span><span lang="en">Mali</span><span lang="es">Malí</span><span lang="pt">Mali</span><span lang="ar">مالي</span><span lang="zh">马里</span></td><td class="num">7</td><td class="num">84 €</td><td class="num">0</td></tr>
+<tr><td><span class="code">AMB-CI-01</span></td><td><span lang="fr">Côte d’Ivoire</span><span lang="ru">Кот-д’Ивуар</span><span lang="en">Côte d’Ivoire</span><span lang="es">Costa de Marfil</span><span lang="pt">Costa do Marfim</span><span lang="ar">ساحل العاج</span><span lang="zh">科特迪瓦</span></td><td class="num">6</td><td class="num">72 €</td><td class="num">0</td></tr>
+<tr><td><span class="code">AMB-SN-01</span></td><td><span lang="fr">Sénégal</span><span lang="ru">Сенегал</span><span lang="en">Senegal</span><span lang="es">Senegal</span><span lang="pt">Senegal</span><span lang="ar">السنغال</span><span lang="zh">塞内加尔</span></td><td class="num">4</td><td class="num">48 €</td><td class="num">0</td></tr>
+<tr><td>—</td><td><span lang="fr">Inscription directe</span><span lang="ru">Пришли сами</span><span lang="en">Direct sign-up</span><span lang="es">Inscripción directa</span><span lang="pt">Inscrição direta</span><span lang="ar">تسجيل مباشر</span><span lang="zh">直接报名</span></td><td class="num">7</td><td class="num">—</td><td class="num">—</td></tr>
+</tbody></table>
+<p class="note"><span lang="fr">Exemple : commission de 10 % sur chaque élève qui a payé et suivi la formation, plus une place offerte en théorie pour dix élèves. Elle est déduite avant le partage 50/50.</span><span lang="ru">Пример: комиссия 10 % с каждого ученика, который оплатил и прошёл обучение, и подарочное место на теорию за каждые десять учеников. Вычитается до деления 50/50.</span><span lang="en">Example: a 10% commission on each student who paid and completed the training, plus one gift place in theory for every ten students. Deducted before the 50/50 split.</span><span lang="es">Ejemplo: comisión del 10 % por cada alumno que pagó y completó la formación, y una plaza regalada de teoría por cada diez alumnos. Se descuenta antes del reparto 50/50.</span><span lang="pt">Exemplo: comissão de 10 % por cada aluno que pagou e concluiu a formação, e um lugar oferecido na teoria por cada dez alunos. É deduzida antes da partilha 50/50.</span><span lang="ar">مثال: عمولة 10% عن كل متدرّب دفع وأكمل التدريب، ومقعد مجاني في النظري عن كل عشرة متدرّبين. تُخصم قبل تقاسم الدخل 50/50.</span><span lang="zh">示例：每位已付款并完成培训的学员提取 10% 佣金，每满十名学员赠送一个理论课名额。佣金在 50/50 分成之前扣除。</span></p></div>
+<div class="card calc"><div class="eyebrow"><span lang="fr">Relevé d’étape</span><span lang="ru">Отчёт по этапу</span><span lang="en">Stage statement</span><span lang="es">Informe de etapa</span><span lang="pt">Relatório de etapa</span><span lang="ar">كشف المرحلة</span><span lang="zh">阶段结算单</span></div><h2><span lang="fr">Théorie · groupe de mars 2027</span><span lang="ru">Теория · группа марта 2027</span><span lang="en">Theory · March 2027 group</span><span lang="es">Teoría · grupo de marzo 2027</span><span lang="pt">Teoria · grupo de março 2027</span><span lang="ar">النظري · مجموعة مارس 2027</span><span lang="zh">理论课 · 2027 年 3 月班</span></h2>
+<div class="ln "><span><span lang="fr">Frais d’inscription · 20 élèves</span><span lang="ru">Сборы · 20 учеников</span><span lang="en">Fees · 20 students</span><span lang="es">Inscripciones · 20 alumnos</span><span lang="pt">Inscrições · 20 alunos</span><span lang="ar">الرسوم · 20 متدرّبًا</span><span lang="zh">学费 · 20 名学员</span></span><span>2 400 €</span></div>
+<div class="ln "><span><span lang="fr">Frais directs : paiement, traduction, certificats</span><span lang="ru">Прямые расходы: платёжные комиссии, перевод, сертификаты</span><span lang="en">Direct costs: payment fees, translation, certificates</span><span lang="es">Gastos directos: comisiones de pago, traducción, certificados</span><span lang="pt">Custos diretos: comissões de pagamento, tradução, certificados</span><span lang="ar">التكاليف المباشرة: عمولات الدفع والترجمة والشهادات</span><span lang="zh">直接费用：支付手续费、翻译、证书</span></span><span>− 290 €</span></div>
+<div class="ln sub"><span><span lang="fr">Revenu net</span><span lang="ru">Чистый доход</span><span lang="en">Net revenue</span><span lang="es">Ingreso neto</span><span lang="pt">Receita líquida</span><span lang="ar">صافي الدخل</span><span lang="zh">净收入</span></span><span>2 110 €</span></div>
+<div class="ln "><span><span lang="fr">Ambassadeurs · 10 % sur 17 élèves</span><span lang="ru">Амбассадоры · 10 % с 17 учеников</span><span lang="en">Ambassadors · 10% on 17 students</span><span lang="es">Embajadores · 10 % de 17 alumnos</span><span lang="pt">Embaixadores · 10 % de 17 alunos</span><span lang="ar">السفراء · 10% عن 17 متدرّبًا</span><span lang="zh">大使 · 17 名学员的 10%</span></span><span>− 204 €</span></div>
+<div class="ln sub"><span><span lang="fr">À partager 50/50</span><span lang="ru">К делению 50/50</span><span lang="en">To split 50/50</span><span lang="es">A repartir 50/50</span><span lang="pt">A partilhar 50/50</span><span lang="ar">للتقاسم 50/50</span><span lang="zh">50/50 分成金额</span></span><span>1 906 €</span></div>
+<div class="split"><div><div class="k">Heritage of Flavours</div><div class="v">953 €</div></div><div class="me"><div class="k"><span lang="fr">Vous</span><span lang="ru">Вы</span><span lang="en">You</span><span lang="es">Usted</span><span lang="pt">Você</span><span lang="ar">أنت</span><span lang="zh">您</span></div><div class="v">953 €</div></div></div>
+<p class="note"><span lang="fr">Versé le 12.04.2027, directement sur votre compte. Le relevé détaillé est disponible en PDF.</span><span lang="ru">Выплачено 12.04.2027 напрямую на ваш счёт. Подробный отчёт доступен в PDF.</span><span lang="en">Paid on 12.04.2027, directly to your account. The detailed statement is available as a PDF.</span><span lang="es">Pagado el 12.04.2027, directamente en su cuenta. El informe detallado está disponible en PDF.</span><span lang="pt">Pago a 12.04.2027, diretamente na sua conta. O relatório detalhado está disponível em PDF.</span><span lang="ar">دُفع في 12.04.2027 مباشرة إلى حسابك. الكشف التفصيلي متاح بصيغة PDF.</span><span lang="zh">已于 2027.04.12 直接汇入您的账户。详细结算单可下载 PDF。</span></p></div>
+</div>
+<div class="card row"><div class="eyebrow"><span lang="fr">Versements</span><span lang="ru">Выплаты</span><span lang="en">Payouts</span><span lang="es">Pagos</span><span lang="pt">Pagamentos</span><span lang="ar">الدفعات</span><span lang="zh">付款</span></div><h2><span lang="fr">Historique des versements</span><span lang="ru">История выплат</span><span lang="en">Payout history</span><span lang="es">Historial de pagos</span><span lang="pt">Histórico de pagamentos</span><span lang="ar">سجل الدفعات</span><span lang="zh">付款记录</span></h2>
+<table class="t"><thead><tr><th><span lang="fr">Étape</span><span lang="ru">Этап</span><span lang="en">Stage</span><span lang="es">Etapa</span><span lang="pt">Etapa</span><span lang="ar">المرحلة</span><span lang="zh">阶段</span></th><th class="num"><span lang="fr">Élèves</span><span lang="ru">Учеников</span><span lang="en">Students</span><span lang="es">Alumnos</span><span lang="pt">Alunos</span><span lang="ar">متدرّبون</span><span lang="zh">学员</span></th><th class="num"><span lang="fr">Votre part</span><span lang="ru">Ваша доля</span><span lang="en">Your share</span><span lang="es">Su parte</span><span lang="pt">A sua parte</span><span lang="ar">حصتك</span><span lang="zh">您的分成</span></th><th><span lang="fr">Date</span><span lang="ru">Дата</span><span lang="en">Date</span><span lang="es">Fecha</span><span lang="pt">Data</span><span lang="ar">التاريخ</span><span lang="zh">日期</span></th><th><span lang="fr">Statut</span><span lang="ru">Статус</span><span lang="en">Status</span><span lang="es">Estado</span><span lang="pt">Estado</span><span lang="ar">الحالة</span><span lang="zh">状态</span></th><th><span lang="fr">Relevé</span><span lang="ru">Отчёт</span><span lang="en">Statement</span><span lang="es">Informe</span><span lang="pt">Relatório</span><span lang="ar">الكشف</span><span lang="zh">结算单</span></th></tr></thead><tbody>
+<tr><td><span lang="fr">Théorie · groupe de février</span><span lang="ru">Теория · группа февраля</span><span lang="en">Theory · February group</span><span lang="es">Teoría · grupo de febrero</span><span lang="pt">Teoria · grupo de fevereiro</span><span lang="ar">النظري · مجموعة فبراير</span><span lang="zh">理论课 · 2 月班</span></td><td class="num">11</td><td class="num">542 €</td><td>14.03.2027</td><td><span class="pill ok"><span lang="fr">Versé</span><span lang="ru">Выплачено</span><span lang="en">Paid</span><span lang="es">Pagado</span><span lang="pt">Pago</span><span lang="ar">مدفوع</span><span lang="zh">已支付</span></span></td><td><span class="code">PDF</span></td></tr>
+<tr><td><span lang="fr">Théorie · groupe de mars</span><span lang="ru">Теория · группа марта</span><span lang="en">Theory · March group</span><span lang="es">Teoría · grupo de marzo</span><span lang="pt">Teoria · grupo de março</span><span lang="ar">النظري · مجموعة مارس</span><span lang="zh">理论课 · 3 月班</span></td><td class="num">20</td><td class="num">953 €</td><td>12.04.2027</td><td><span class="pill ok"><span lang="fr">Versé</span><span lang="ru">Выплачено</span><span lang="en">Paid</span><span lang="es">Pagado</span><span lang="pt">Pago</span><span lang="ar">مدفوع</span><span lang="zh">已支付</span></span></td><td><span class="code">PDF</span></td></tr>
+<tr><td><span lang="fr">Pratique · événement HF, avril</span><span lang="ru">Практика · мероприятие HF, апрель</span><span lang="en">Practice · HF event, April</span><span lang="es">Práctica · evento HF, abril</span><span lang="pt">Prática · evento HF, abril</span><span lang="ar">التطبيق · فعالية HF، أبريل</span><span lang="zh">实践 · HF 赛事，4 月</span></td><td class="num">9</td><td class="num">610 €</td><td>20.05.2027</td><td><span class="pill ok"><span lang="fr">Versé</span><span lang="ru">Выплачено</span><span lang="en">Paid</span><span lang="es">Pagado</span><span lang="pt">Pago</span><span lang="ar">مدفوع</span><span lang="zh">已支付</span></span></td><td><span class="code">PDF</span></td></tr>
+<tr><td><span lang="fr">Théorie · groupe de juin</span><span lang="ru">Теория · группа июня</span><span lang="en">Theory · June group</span><span lang="es">Teoría · grupo de junio</span><span lang="pt">Teoria · grupo de junho</span><span lang="ar">النظري · مجموعة يونيو</span><span lang="zh">理论课 · 6 月班</span></td><td class="num">7</td><td class="num">365 €</td><td>15.07.2027</td><td><span class="pill ok"><span lang="fr">Versé</span><span lang="ru">Выплачено</span><span lang="en">Paid</span><span lang="es">Pagado</span><span lang="pt">Pago</span><span lang="ar">مدفوع</span><span lang="zh">已支付</span></span></td><td><span class="code">PDF</span></td></tr>
+<tr><td><span lang="fr">Pratique · événement HF, octobre</span><span lang="ru">Практика · мероприятие HF, октябрь</span><span lang="en">Practice · HF event, October</span><span lang="es">Práctica · evento HF, octubre</span><span lang="pt">Prática · evento HF, outubro</span><span lang="ar">التطبيق · فعالية HF، أكتوبر</span><span lang="zh">实践 · HF 赛事，10 月</span></td><td class="num">12</td><td class="num">640 €</td><td>—</td><td><span class="pill wait"><span lang="fr">En calcul</span><span lang="ru">В расчёте</span><span lang="en">Being calculated</span><span lang="es">En cálculo</span><span lang="pt">Em cálculo</span><span lang="ar">قيد الحساب</span><span lang="zh">计算中</span></span></td><td><span class="code">PDF</span></td></tr>
+</tbody></table>
+<p class="note"><span lang="fr">Chaque versement arrive dans les 30 jours après le relevé de l’étape, directement au fondateur.</span><span lang="ru">Каждая выплата приходит в течение 30 дней после отчёта по этапу, лично основателю.</span><span lang="en">Each payout arrives within 30 days of the stage statement, directly to the founder.</span><span lang="es">Cada pago llega en los 30 días siguientes al informe de la etapa, directamente al fundador.</span><span lang="pt">Cada pagamento chega no prazo de 30 dias após o relatório da etapa, diretamente ao fundador.</span><span lang="ar">تصل كل دفعة خلال 30 يومًا من كشف المرحلة، مباشرة إلى المؤسِّس.</span><span lang="zh">每笔款项在阶段结算单发出后 30 天内直接支付给创始人。</span></p></div>
+</div>
+<footer>
+  <div class="motto"><span lang="fr">Chaque cuisine a son histoire. Chaque histoire mérite d’être entendue.</span><span lang="ru">У каждой кухни своя история. Каждая история заслуживает быть услышанной.</span><span lang="en">Every cuisine has its story. Every story deserves to be heard.</span><span lang="es">Cada cocina tiene su historia. Cada historia merece ser escuchada.</span><span lang="pt">Cada cozinha tem a sua história. Cada história merece ser ouvida.</span><span lang="ar">لكل مطبخ حكايته. وكل حكاية تستحق أن تُسمَع.</span><span lang="zh">每一种菜系都有它的故事。每一个故事都值得被聆听。</span></div>
+  <div>© Heritage of Flavours · World Culinary Council · 2026</div>
+</footer>
+<script>
+const setL=l=>{document.body.className='l-'+l;document.documentElement.lang=l;document.documentElement.dir=(l==='ar'?'rtl':'ltr');localStorage.setItem('hf-l',l);const sel=document.querySelector('.langsel');if(sel)sel.value=l;draw()};
+document.querySelector('.langsel').onchange=e=>setL(e.target.value);
+const M={"fr": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct."], "ru": ["янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт"], "en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"], "es": ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct"], "pt": ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out"], "ar": ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر"], "zh": ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月"]}, U={"fr": "élèves", "ru": "учеников", "en": "students", "es": "alumnos", "pt": "alunos", "ar": "متدرّبين", "zh": "名学员"}, D=[0, 11, 20, 0, 0, 7, 0, 0, 0, 0];
+function draw(){
+  const l=document.body.className.slice(2)||'fr', box=document.getElementById('chart'), tip=document.getElementById('tip');
+  box.querySelectorAll('svg').forEach(s=>s.remove());
+  const W=560,H=230,pl=28,pb=26,pt=10,max=25,n=D.length,bw=(W-pl)/n,ns='http://www.w3.org/2000/svg';
+  const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',`0 0 ${W} ${H}`);s.setAttribute('role','img');
+  const y=v=>H-pb-(v/max)*(H-pb-pt);
+  for(const g of [0,10,20]){const ln=document.createElementNS(ns,'line');ln.setAttribute('x1',pl);ln.setAttribute('x2',W);ln.setAttribute('y1',y(g));ln.setAttribute('y2',y(g));ln.setAttribute('stroke','#e6d9bf');ln.setAttribute('stroke-width',g?1:1.5);s.appendChild(ln);
+    const tx=document.createElementNS(ns,'text');tx.setAttribute('x',pl-8);tx.setAttribute('y',y(g)+4);tx.setAttribute('text-anchor','end');tx.setAttribute('font-size','11');tx.setAttribute('fill','#7a6650');tx.textContent=g;s.appendChild(tx)}
+  D.forEach((v,i)=>{const cx=pl+bw*i+bw/2,w=Math.min(26,bw*.56);
+    if(v>0){const r=document.createElementNS(ns,'path'),x0=cx-w/2,y0=y(v),yb=y(0),rr=4;
+      r.setAttribute('d',`M${x0},${yb}V${y0+rr}Q${x0},${y0} ${x0+rr},${y0}H${x0+w-rr}Q${x0+w},${y0} ${x0+w},${y0+rr}V${yb}Z`);r.setAttribute('fill','#9a7430');s.appendChild(r);
+      const vt=document.createElementNS(ns,'text');vt.setAttribute('x',cx);vt.setAttribute('y',y0-6);vt.setAttribute('text-anchor','middle');vt.setAttribute('font-size','12');vt.setAttribute('font-weight','600');vt.setAttribute('fill','#2e2620');vt.textContent=v;s.appendChild(vt)}
+    const mt=document.createElementNS(ns,'text');mt.setAttribute('x',cx);mt.setAttribute('y',H-8);mt.setAttribute('text-anchor','middle');mt.setAttribute('font-size','11');mt.setAttribute('fill','#7a6650');mt.textContent=M[l][i];s.appendChild(mt);
+    const hit=document.createElementNS(ns,'rect');hit.setAttribute('x',pl+bw*i);hit.setAttribute('y',0);hit.setAttribute('width',bw);hit.setAttribute('height',H-pb);hit.setAttribute('fill','transparent');
+    hit.onmouseenter=()=>{tip.textContent=`${M[l][i]} 2027 · ${v} ${U[l]}`;const bb=box.getBoundingClientRect(),k=bb.width/W;tip.style.left=(cx*k)+'px';tip.style.top=(y(Math.max(v,0))*k)+'px';tip.style.opacity=1};
+    hit.onmouseleave=()=>tip.style.opacity=0;s.appendChild(hit)});
+  box.insertBefore(s,tip);
+}
+setL(localStorage.getItem('hf-l')||'fr');
+</script>
+
+</body>
+</html>
